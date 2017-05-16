@@ -1,12 +1,12 @@
-import Ember from 'ember';
+import { run, Application } from 'ember';
 import { initialize } from 'commently/initializers/geo';
 import { module, test } from 'qunit';
 import destroyApp from '../../helpers/destroy-app';
 
 module('Unit | Initializer | geo', {
   beforeEach() {
-    Ember.run(() => {
-      this.application = Ember.Application.create();
+    run(() => {
+      this.application = Application.create();
       this.application.deferReadiness();
     });
   },
