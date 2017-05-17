@@ -2,7 +2,7 @@ import Ember from 'ember';
 import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mixin';
 import { default as math, PI } from 'math';
 
-const { Route, inject, getOwner } = Ember;
+const { Route, inject, Logger, getOwner } = Ember;
 
 export default Route.extend(ApplicationRouteMixin, {
   session: inject.service(),
@@ -14,7 +14,7 @@ export default Route.extend(ApplicationRouteMixin, {
   },
   beforeModel() {
     this._super(...arguments);
-    console.log(math, PI);
+    Logger.log(math, PI);
     if (this.get('session.isAuthenticated')) {
       return this.get('currentUser').loadUserInfo();
     }
