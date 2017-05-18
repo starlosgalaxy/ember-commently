@@ -9,7 +9,7 @@ export function initialize(appInstance) {
   if (fbService.get('isFastBoot')) {
     let headers = fbService.get('request.headers');
     ua = headers.get('user-agent');
-    console.log('USER AGENT:', ua);
+    // console.log('USER AGENT:', ua);
     appInstance.register('data:request', {
       userAgent: ua
     }, {
