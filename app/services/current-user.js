@@ -10,7 +10,7 @@ export default Service.extend({
       this.set('user', user);
       return user;
     } else {
-      return this.get('store').findRecord('user', 'current')
+      return this.get('store').queryRecord('user', {})
       .then((user) => {
         this.set('user', user);
         return user;

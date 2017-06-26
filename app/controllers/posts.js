@@ -3,6 +3,8 @@ import Ember from 'ember';
 const { Controller, run: { debounce } } = Ember;
 
 export default Controller.extend({
+  queryParams: ['search'],
+  search: '',
   actions: {
     searchUpdated(paramVal) {
       this.set('search', paramVal);
