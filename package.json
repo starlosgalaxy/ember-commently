@@ -34,6 +34,7 @@
     "ember-cli-htmlbars-inline-precompile": "^0.3.6",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-moment-shim": "3.0.0",
+    "ember-cli-normalize-entity-name": "^1.0.0",
     "ember-cli-qunit": "^3.1.0",
     "ember-cli-release": "^0.2.9",
     "ember-cli-shims": "^1.0.2",
@@ -64,5 +65,8 @@
   "engines": {
     "node": ">= 4"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "ember-cli-normalize-entity-name": "^1.0.0"
+  }
 }
