@@ -71,6 +71,7 @@
   },
   "ember-addon": {
     "paths": [
+      "lib/commenter",
       "lib/core-ui"
     ]
   }
