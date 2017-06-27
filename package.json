@@ -68,5 +68,10 @@
   "private": true,
   "dependencies": {
     "ember-cli-normalize-entity-name": "^1.0.0"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/core-ui"
+    ]
   }
 }
